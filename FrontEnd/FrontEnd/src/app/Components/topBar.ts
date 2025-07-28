@@ -15,20 +15,67 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   styles: [`
     .top-bar {
       position: absolute;
-      top: 0;
+      top: -8px;
       left: 220px;
       height: 60px;
-      width: calc(100% - 200px);
-      border: 2px solid #4b0082;
+      width: calc(100% - 217px);
+      border: 3px solid black;
       display: flex;
       align-items: center;
       justify-content: center;
       font-family: 'Montserrat', sans-serif;
-      font-size: 16px;
+      font-size: 18px;
       font-weight: bold;
       color: #ffffff;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+    }
+
+    .top-bar::before {
+      content: '';
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
+      z-index: -1;
+      padding: 3px;
+      border: 5px solid transparent;
+      background: linear-gradient(
+        90deg,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet,
+        red
+      );
+      background-size: 400% 400%;
+      animation: rainbowBorderWalk 4s linear infinite;
+      mask:
+        linear-gradient(black, black) content-box,
+        linear-gradient(black, black);
+      -webkit-mask:
+        linear-gradient(black, black) content-box,
+        linear-gradient(black, black);
+      mask-composite: exclude;
+      -webkit-mask-composite: destination-out;
+      pointer-events: none;
+    }
+
+    @keyframes rainbowBorderWalk {
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 400% 50%;
+      }
     }
   `]
+
 })
 export class TopBarComponent implements OnInit {
   number: number = 0;

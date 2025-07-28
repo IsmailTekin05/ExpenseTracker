@@ -13,7 +13,7 @@ import {NgStyle} from '@angular/common';
       position: absolute;
       top: 60px;
       left: 227px;
-      height: calc(100%);
+      height: calc(90% + 7px);
       width: calc(50% - 126px);
       border: 2px solid #000000;
       display: flex;
