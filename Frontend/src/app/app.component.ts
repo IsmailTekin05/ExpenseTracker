@@ -5,16 +5,45 @@ import * as Components from './Components';
   selector: 'app-root',
   standalone: true,
   template: `
-    <app-sidebar></app-sidebar>
-    <income></income>
-    <expense></expense>
-    <top-bar></top-bar>
-    <expenseTracker></expenseTracker>
+    <top-bar #topBar></top-bar>
+
+    <div class="dashboard">
+      <div class="column left-column">
+        <app-income [topBar]="topBar"></app-income>
+      </div>
+      <div class="column right-column">
+        <app-expense [topBar]="topBar"></app-expense>
+        <expenseTracker></expenseTracker>
+      </div>
+    </div>
   `,
-  imports: [Components.TopBarComponent, Components.ExpenseTrackerComponent,
-    Components.SidebarComponent,Components.IncomeComponent
-  , Components.ExpenseComponent],
+  styles: [`
+    .dashboard {
+      display: flex;
+      width: 100%;
+      margin-top: 60px; /* height of TopBar */
+      gap: 20px;
+      padding: 20px;
+      box-sizing: border-box;
+      background-color: black; /* Set background color to black */
+      color: white; /* Optional: Set text color to white for better visibility */
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      flex: 1;
+    }
+
+    .left-column { max-width: 50%; }
+    .right-column { max-width: 50%; }
+  `],
+  imports: [
+    Components.TopBarComponent,
+    Components.ExpenseTrackerComponent,
+    Components.IncomeComponent,
+    Components.ExpenseComponent
+  ]
 })
-export class AppComponent {
-  title = 'FrontEnd';
-}
+export class AppComponent {}
