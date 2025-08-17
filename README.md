@@ -34,10 +34,10 @@ This project allows users to track incomes and expenses, categorize transactions
 
 ## How To Use
 
--**Virtual Environment(venv):** To use the python virtaul environment use the first navigate your way to venv file (cd ..path/ExpenseTracker) then run "venv/Scripts/activate"
--**Database(MySQL):** For db you should navigate your way to project file (cd ..path/ExpenseTracker/project) and change the password and admin according to your name and password and keep the MySQL service running
--**Frontend(Angular):** For accessing frontend go to "..path/ExpenseTracker/Frontend/src/app" and first run "npm install" then you can run the angular server on localhost:4200 by typing "ng serve"
--**Run server(Django):** When you are in "..path/ExpenseTracker/" type "python manage.py runserver" and it will run the backend on localhost:8000 and you can go to a browser of your choice and type localhost:8000 and access the site.
+- **Virtual Environment(venv):** To use the python virtaul environment use the first navigate your way to venv file (cd ..path/ExpenseTracker) then run "venv/Scripts/activate"
+- **Database(MySQL):** For db you should navigate your way to project file (cd ..path/ExpenseTracker/project) and change the password and admin according to your name and password and keep the MySQL service running
+- **Frontend(Angular):** For accessing frontend go to "..path/ExpenseTracker/Frontend/src/app" and first run "npm install" then you can run the angular server on localhost:4200 by typing "ng serve"
+- **Run server(Django):** When you are in "..path/ExpenseTracker/" type "python manage.py runserver" and it will run the backend on localhost:8000 and you can go to a browser of your choice and type localhost:8000 and access the site.
 
 
 
