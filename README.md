@@ -1,6 +1,6 @@
 # ExpenseTracker
 
-![ExpenseTracker Screenshot](C:\Users\Ismail\Pictures\Screenshots\Ekran görüntüsü 2025-08-17 192425.png)
+
 
 ---
 
@@ -43,22 +43,39 @@ This project allows users to track incomes and expenses, categorize transactions
 
 ## Folder Structure
 ExpenseTracker/
+
 ├── Backend/ # Django backend
+
 │ ├── manage.py # Django management script
+
 │ ├── requirements.txt # Python dependencies
+
 │ ├── templates/
+
 │ │ └── index.html # Angular entry point
+
 │ └── static/
+
 │ ├── main-.js # Angular JS bundle
+
 │ ├── styles-.css # Angular CSS bundle
+
 │ └── polyfills-*.js # Angular polyfills
+
 ├── Frontend/ # Angular frontend
+
 │ ├── src/
+
 │ ├── angular.json
+
 │ ├── package.json
+
 │ └── ...other Angular files
+
 ├── .gitignore
+
 ├── README.md
+
 └── LICENSE
 
 
