@@ -1,6 +1,6 @@
 # ExpenseTracker
 
-
+![image alt](https://github.com/IsmailTekin05/ExpenseTracker/blob/2637759c63e48277f5a78d97b6d907212d7aaf71/screenshot.png)
 
 ---
 
